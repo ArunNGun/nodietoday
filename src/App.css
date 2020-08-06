@@ -7,7 +7,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
 }
 
@@ -15,6 +15,17 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  text-align: center;
+  align-content: center;
 }
 
 .App-header {
@@ -260,4 +271,12 @@
   to {
     opacity: 1;
   }
+}
+
+p {
+  text-transfrom: uppercase;
+  color: rgb(50, 214, 192);
+  font-size: 1em;
+  text-align: center;
+  animation: neonGlow 2s infinite alternate $easeInOutQuad;
 }

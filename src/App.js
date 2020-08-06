@@ -3,6 +3,7 @@ import TextTransition, { presets } from "react-text-transition";
 import audio from "./audio.mp3";
 import "./App.css";
 import Navbar from "./Navbar";
+import music from "./vinyl.png";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -114,6 +115,9 @@ function App() {
   ];
 
   useEffect(() => {
+    /*if (window.confirm("Play sound?")) {
+      playit();
+    }*/
     const interval = setInterval(() => {
       let temp_index = Math.floor(0 + Math.random() * (100 - 0));
       setIndex((index) => temp_index);
@@ -121,13 +125,21 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
+  const playit = () => {
+    const audioEl = document.getElementsByClassName("audio-element")[0];
+    audioEl.play();
+  };
+
+  let classn = "App-logo";
   return (
     <div className="App bg">
-      <audio src={audio} autoPlay={true} loop={true} />
       <Navbar />
       <header className="App-header ">
         {
-          //<p>reason {index}</p>
+          <button onClick={playit}>
+            <p>Play music</p>
+            <img src={music} className={classn} alt="logo" />
+          </button>
         }
         <span className="brooks">
           <TextTransition text={data[index]} springCoonfig={presets.wobbly} />
@@ -140,6 +152,7 @@ function App() {
         <span class="fast-flicker">Whatever </span>Happens
         <span class="flicker">,</span>Happens.
       </div>
+      <audio className="audio-element" src={audio} loop="true" />
     </div>
   );
 }
