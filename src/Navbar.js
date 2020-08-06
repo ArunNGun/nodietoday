@@ -12,7 +12,7 @@ function Navbar() {
         <span id="I">Alive</span>
       </div>
 
-      <a class="active" href="https://www.instagram.com/arun_irl/">
+      <a className="active" href="https://www.instagram.com/arun_irl/">
         <img
           src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"
           alt="insta"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TextTransition, { presets } from "react-text-transition";
-
+import audio from "./audio.mp3";
 import "./App.css";
 import Navbar from "./Navbar";
 
@@ -123,6 +123,7 @@ function App() {
 
   return (
     <div className="App bg">
+      <audio src={audio} autoPlay={true} loop={true} />
       <Navbar />
       <header className="App-header ">
         {
@@ -130,8 +131,15 @@ function App() {
         }
         <span className="brooks">
           <TextTransition text={data[index]} springCoonfig={presets.wobbly} />
-        </span>
+        </span>{" "}
+        <br />
+        <br />
+        <br />
       </header>
+      <div class="sign footer_container">
+        <span class="fast-flicker">Whatever </span>Happens
+        <span class="flicker">,</span>Happens.
+      </div>
     </div>
   );
 }
