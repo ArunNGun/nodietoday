@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/nodietoday/static/css/main.a2a48b9d.chunk.css",
+    "main.js": "/nodietoday/static/js/main.130876c8.chunk.js",
+    "main.js.map": "/nodietoday/static/js/main.130876c8.chunk.js.map",
+    "runtime-main.js": "/nodietoday/static/js/runtime-main.f4ae963e.js",
+    "runtime-main.js.map": "/nodietoday/static/js/runtime-main.f4ae963e.js.map",
+    "static/js/2.e6ed9948.chunk.js": "/nodietoday/static/js/2.e6ed9948.chunk.js",
+    "static/js/2.e6ed9948.chunk.js.map": "/nodietoday/static/js/2.e6ed9948.chunk.js.map",
+    "index.html": "/nodietoday/index.html",
+    "precache-manifest.59958c00da637b3540612335a940b9e7.js": "/nodietoday/precache-manifest.59958c00da637b3540612335a940b9e7.js",
+    "service-worker.js": "/nodietoday/service-worker.js",
+    "static/css/main.a2a48b9d.chunk.css.map": "/nodietoday/static/css/main.a2a48b9d.chunk.css.map",
+    "static/js/2.e6ed9948.chunk.js.LICENSE.txt": "/nodietoday/static/js/2.e6ed9948.chunk.js.LICENSE.txt",
+    "static/media/audio.mp3": "/nodietoday/static/media/audio.3ae8ff15.mp3",
+    "static/media/App.css": "/nodietoday/static/media/image1.0a1cf2af.gif",
+    "static/media/vinyl.png": "/nodietoday/static/media/vinyl.446a5883.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4ae963e.js",
+    "static/js/2.e6ed9948.chunk.js",
+    "static/css/main.a2a48b9d.chunk.css",
+    "static/js/main.130876c8.chunk.js"
+  ]
+}
